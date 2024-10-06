@@ -8,5 +8,8 @@ setInterval(() => {
     ];
     const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
     console.log(`Changing status to: ${randomStatus}`);
-    // Here you would set the Discord status using Vendetta's API (this is just a placeholder)
+
+    // Assuming you have the correct Vendetta method to change the status
+    vendetta.api.status.set(randomStatus); // Use the correct method based on the Vendetta API
 }, 1000);
+
